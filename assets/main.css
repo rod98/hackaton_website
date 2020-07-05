@@ -1,0 +1,156 @@
+#inner {
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+    %height: 100%;
+    %background-color: white;
+    padding-bottom: 20px;
+    %padding: 0px;
+    %box-sizing: border-box;
+}
+
+#outer {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    display: table;
+    margin: 0 auto;
+    font-size: 30px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+div.centered {
+    text-align: center;
+}
+
+@media only screen and (max-width: 640px) {
+    #inner {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 641px) {
+    #inner {
+        width: 640px;
+    }
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    font-family: "Ubuntu", "Cantarell", "Sans";
+    font-size: 15pt;
+}
+
+html {
+    background: #aaf;
+}
+
+input[type=submit], input[type=file], button {
+    background: #fff;
+    border: 1px solid;
+    border-color: #aaf;
+    width: 150px;
+}
+
+input, button {
+    margin-bottom: .50rem;
+    margin-right: .50rem;
+    margin-left: .50rem;
+}
+
+input, button, div {
+    border-radius: 10px;
+}
+
+.hidden {
+    visibility: collapse;
+    display: none;
+}
+
+button:hover, input:hover {
+    background: #ddf;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+input, button, div.readable {
+    padding: 20px;
+}
+
+button, button:active, button:focus, button:focus:active {
+    user-select: none;
+    background-image: none;
+    outline: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+div.readable {
+    background: white;
+    text-align: left;
+    margin-bottom: .45rem;
+}
+
+table {
+    width: 100%;
+}
+
+table, tr, th {
+    font-weight: normal;
+}
+
+th.header {
+    border: 1px;
+    border-color: black;
+    border-bottom-style: solid;
+    font-weight: bold;
+}
+
+div.resback {
+    background: pink;
+    border-radius: 4px;
+}
+
+th.righter {
+    text-align: right;
+    border: 1px;
+    border-color: black;
+    border-left-style: dotted;
+    max-width: 20px;
+}
+
+.correct {
+    color: darkcyan;
+}
+
+.incorrect {
+    color: crimson;
+}
+
+.correct, .incorrect {
+    font-weight: bold;
+}
+
+code {
+    font-family: monospace;
+}
+
+p {
+    margin-top: 0px;
+}
+
+.success {
+    letter-spacing: 8px;
+}
+
+.glorious {
+    font-size: 10px;
+    letter-spacing: 11px;
+}
